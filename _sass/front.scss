@@ -1,0 +1,134 @@
+/* Global declaration */
+body {
+  font-family: 'Lato', serif;
+}
+
+#mock-up {
+  background-image: url('/img/mock.jpg');
+  opacity: 0.8;
+  height: 3285px;
+  width: auto;
+}
+/* colors */
+$white: #fff;
+$black: #000;
+$gray: #333333;
+$skyblue: #0FB5B3;
+
+.text-center {
+  text-align: center;
+}
+
+.section-header{
+  margin:45px 0px 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: none;
+}
+ 
+
+/*header style */
+
+nav {
+  &#navbar-header{
+    background-color: $gray;
+    border-color: transparent;
+
+  &.navbar-visible {
+    top: 0;
+  }
+
+  &.navbar-hidden {
+    top: -100px;
+  }
+
+  &.navbar {
+    min-height: 68px;
+    transition: linear 0.25s;
+  }
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+
+    .nav-container {
+      margin: 0 12px;
+      padding-top: 0;
+      padding-bottom: 0;
+    
+      .navbar-header{
+
+        .navbar-brand {
+          height: 66px;
+          padding-top: 0;
+          padding-bottom: 0;
+          line-height: 55px;
+          margin-left:30px;
+          padding:0;
+
+          a {
+
+            img {
+              top: auto;
+              margin-top: 6px;
+              float: left;
+
+              &.brand-logo-small {
+                height: 55px;
+              } 
+            }
+
+          }
+
+        }
+
+        button {
+          margin-top: 20px;
+        }
+
+      }/* end of navbar-header */
+
+      .navbar-collapse {
+        border-color: transparent;
+
+        .navbar-right {
+          margin-right: 30px;
+
+          ul {
+            &.nav {
+              padding-right: 0;
+              width: 100%;
+
+              li {
+                padding: 25px 0px 0px 8px;
+                margin-top: 0px;
+
+                a {
+                  display: inline;
+                  padding: 0;
+                  color: $white;
+                  font-size: 20px;
+                  letter-spacing: 3px;
+                }
+
+                &:not(:last-child) {
+                  margin-right: 30px;
+                }
+              }
+            }
+          }
+        }
+      } 
+    }
+  }
+}/* end of nav */
+
