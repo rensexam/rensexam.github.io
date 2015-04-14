@@ -3,17 +3,18 @@ body {
   font-family: 'Lato', serif;
 }
 
-#mock-up {
-  background-image: url('/img/mock.jpg');
+#mock-up{
+  background-image: url('/aestrea.jpg');
   opacity: 0.8;
-  height: 3285px;
-  width: auto;
+  background-size: cover;
 }
 /* colors */
 $white: #fff;
 $black: #000;
 $gray: #333333;
 $skyblue: #0FB5B3;
+$navbar-text: #878787;
+$navbar-text-active: #3a93cc;
 
 .text-center {
   text-align: center;
@@ -39,7 +40,6 @@ a:focus {
 
 nav {
   &#navbar-header{
-    background-color: $gray;
     border-color: transparent;
 
   &.navbar-visible {
@@ -51,12 +51,12 @@ nav {
   }
 
   &.navbar {
-    min-height: 68px;
+    min-height: 122px;
     transition: linear 0.25s;
   }
 
     a {
-      color: $white;
+      color: $navbar-text;
       text-decoration: none;
     }
 
@@ -68,7 +68,7 @@ nav {
       .navbar-header{
 
         .navbar-brand {
-          height: 66px;
+          height: 70px;
           padding-top: 0;
           padding-bottom: 0;
           line-height: 55px;
@@ -79,14 +79,20 @@ nav {
 
             img {
               top: auto;
-              margin-top: 6px;
+              margin-top: 35px;
               float: left;
 
               &.brand-logo-small {
-                height: 55px;
+                height: 70px;
               } 
             }
 
+          }
+
+          h4 {
+            float: left;
+            margin: 48px 23px 0px;
+            font-size: 25px;
           }
 
         }
@@ -101,7 +107,8 @@ nav {
         border-color: transparent;
 
         .navbar-right {
-          margin-right: 30px;
+          margin-top:50px;
+          margin-right: 95px;
 
           ul {
             &.nav {
@@ -109,19 +116,21 @@ nav {
               width: 100%;
 
               li {
-                padding: 25px 0px 0px 8px;
-                margin-top: 0px;
+                padding: 25px 0px 0px 0px;
+                margin-right: 0px;
 
                 a {
                   display: inline;
                   padding: 0;
-                  color: $white;
+                  color: $navbar-text;
                   font-size: 20px;
-                  letter-spacing: 3px;
+                  letter-spacing: 0px;
                 }
-
+                &:hover{
+                  color: navbar-text-active
+                }
                 &:not(:last-child) {
-                  margin-right: 30px;
+                  margin-right: 12px;
                 }
               }
             }
