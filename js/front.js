@@ -1,8 +1,7 @@
 var rd = rd || {};
   rd.init = function() {
     rd.initNavbar();
-    rd.initWork();
-    rd.initResetScroll();
+    /*rd.initResetScroll();*/
   }
 
 rd.initNavbar = function () {
@@ -10,29 +9,18 @@ rd.initNavbar = function () {
       e.preventDefault();
       var target = $($(this).attr('href'));
       var top = target.offset().top;
-      $('html, body').animate({scrollTop: top - 68 }, 'easeInOutExpo', function(){
+      $('html, body').animate({scrollTop: top - 122 }, 'easeInOutExpo', function(){
           var adjustedTop = target.offset().top;
-          $('html, body').animate({scrollTop: adjustedTop - 68 });
+          $('html, body').animate({scrollTop: adjustedTop - 122 });
       });
   });
 };
- 
-rd.initWork = function () {
-  $('.work-image').hover(
-      function(){
-          $(this).find('.caption').show();
-      },
-      function(){
-          $(this).find('.caption').hide();
-      }
-  );
-};
 
-rd.initResetScroll = function(){
+/*rd.initResetScroll = function(){
     setTimeout(function(){
         $(document).scrollTop(0);
     }, 300);
-};
+};*/
 
 $(function(){
     rd.init();
