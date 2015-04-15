@@ -6,31 +6,13 @@
 
     <div class="row">
       <ul class="diamond-grid">
-        <li class="diamond">
-          <div class="text">
-            <span>HTML</span><br>
-            and Basics
-          </div>
-
-        </li>
-        <li class="diamond">
-          <div class="text">
-            <span>CSS</span><br>
-            CSS3 and SCSS
-          </div>
-        </li>
-        <li class="diamond">
-          <div class="text">
-            <span>JS</span><br>
-            or JQuery
-          </div>
-        </li>
-        <li class="diamond">
-          <div class="text">
-            <span>RD</span><br>
-            Responsive Design
-          </div>
-        </li>
+        {% for tools in site.data.task %}
+          <li class="diamond">
+            <div class="text">
+              {{ tools.name }}
+            </div>
+          </li>
+        {% endfor %}  
       </ul>
     </div>  
   </div>
