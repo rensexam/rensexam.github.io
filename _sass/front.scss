@@ -41,6 +41,7 @@ a:focus {
 nav {
   &#navbar-header{
     border-color: transparent;
+    background: $white;
 
   &.navbar-visible {
     top: 0;
@@ -56,7 +57,6 @@ nav {
   }
 
     a {
-      color: $navbar-text;
       text-decoration: none;
     }
 
@@ -72,11 +72,11 @@ nav {
           padding-top: 0;
           padding-bottom: 0;
           line-height: 55px;
-          margin-left:30px;
+          margin-left: 27px;
           padding:0;
 
           a {
-
+            color: none;
             img {
               top: auto;
               margin-top: 35px;
@@ -93,8 +93,8 @@ nav {
             float: left;
             margin: 48px 23px 0px;
             font-size: 25px;
+            color: $navbar-text;
           }
-
         }
 
         button {
@@ -107,8 +107,8 @@ nav {
         border-color: transparent;
 
         .navbar-right {
-          margin-top:50px;
-          margin-right: 95px;
+          margin-top: 48px;
+          margin-right: 88px;
 
           ul {
             &.nav {
@@ -140,4 +140,33 @@ nav {
     }
   }
 }/* end of nav */
+
+/* intro style */
+#intro {
+  #cover {
+    background-image: url('/img/cover.jpg');
+    background-size: cover;
+    height: 583px;
+    margin-top: 122px;
+
+    .container-content {
+      h1 {
+        font-weight: bold !important;
+        padding-top: 212px;
+        font-size: 54px;
+        letter-spacing: 4px;
+        color: $white;
+      }
+      h4 {
+        padding-top: 2px;
+        color: $white;
+      }
+      .btn {
+        margin-top: 52px;
+        padding: 12px;
+        width: 15%;
+      }
+    }
+  }
+}
 
