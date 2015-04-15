@@ -255,10 +255,38 @@ nav {
 }
 
 /* about style */
-.about {
+#about {
   .about-container{
     background-color: #eeeeee;
     height: 710px;
+   h4 {
+    margin: 0 auto;
+    font-size: 23px;
+    font-weight: 300;
+    padding: 0px 18% 45px 18%;
+   }
+   .about-content {
+      width: 70%;
+      margin: 0 auto;
+      .col-md-6 {
+        min-height: 300px;
+        p {
+          font-size: 20px;
+        }
+        .btn {
+          font-size: 20px;
+          margin-top: 30px;
+          padding: 13px 34px;
+        }
+      }
+      .col-md-6{
+        min-height: 300px;
+        img {
+          height: 300px;
+        }
+      }
+   }
+
   }
 }
 
