@@ -157,7 +157,7 @@ nav {
   #cover {
     background-image: url('/img/cover.jpg');
     background-size: cover;
-    height: 620px;
+    min-height: 620px;
     margin-top: 122px;
 
     .container-content {
@@ -184,7 +184,7 @@ nav {
 /* task style */
 #task {
   .task-container {
-    height: 710px;
+    min-height: 710px;
     background-color: $white;
   }
 
@@ -258,7 +258,7 @@ nav {
 #about {
   .about-container{
     background-color: #eeeeee;
-    height: 710px;
+    min-height: 710px;
    h4 {
     margin: 0 auto;
     font-size: 23px;
@@ -293,15 +293,18 @@ nav {
 /* skill style */
 #skills {
   .skill-container {
-    height: 710px;
+    min-height: 710px;
     .row {
       text-align: center;
       margin: 0;
       h3{
+        font-size: 26px;
         font-weight: 300;
         padding-bottom: 3%;
       }
       ul {
+        padding: 0;
+        margin: 0;
         li {
           &.circle {
             width: 150px;
@@ -328,6 +331,50 @@ nav {
             }
           }
         }
+      }
+    }
+  }
+}
+
+/* likes style */
+#likes {
+  .likes-container {
+    background-image: url('/img/tumbler.jpg');
+    background-size: cover;
+    min-height: 710px;
+    h1{
+      color: $white;
+    }
+    h3 {
+      color: $white;
+      font-weight: 300;
+      padding-bottom: 3%;
+    }
+    .row {
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      .col-md-4 {
+        .col-md-3 {
+          img {
+          }
+        }
+        
+        .col-md-9 {
+          h4 {
+            color: $white;
+            font-size: 22px;
+            margin: 0px;
+            font-weight: 300;
+          }
+
+          p {
+            margin-top:10px;
+            font-size: 15px;
+            color: $white;
+          }
+        } 
       }
     }
   }

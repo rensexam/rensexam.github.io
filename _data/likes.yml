@@ -1,0 +1,23 @@
+- image: pins1.png
+  name: Music
+  description: "I love to play the guitar, piano, and violin. Aside from that, I enjoy composing songs."
+
+- image: pins2.png
+  name: Photography
+  description: "I love taking photos when I travel. I want to remember moments that are special."
+
+- image: pins3.png
+  name: Travel
+  description: "I love to travel to different places, I want to celebrate the cultures of the world."
+
+- image: pins4.png
+  name: Pet
+  description: "My dog is my best friend. We usually go to the park and play until sun down."
+
+- image: pins5.png
+  name: Puzzles
+  description: "Solving puzzles has been my past time since I was a kid. Truly, I am still a kid at heart."
+
+- image: pins6.png
+  name: Code
+  description: "Istill code during my free time because I feel joy in doing so. It has been a part of me."
