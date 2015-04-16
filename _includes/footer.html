@@ -1,0 +1,14 @@
+<footer>
+  <div class="row">
+    <ul>
+    {% for widgets in site.data.footer-widgets %}
+      <li>
+        <a href="{{ widgets.link }}" target="_blank">    
+          <img src="/img/{{ widgets.image }}"/>
+        </a>
+      </li>
+    {% endfor %} 
+    </ul> 
+    <p>Copyright 2015. Project Atrax. Aestrea Frontend Technical Exam. All rights reserved.</p>
+  </div>
+</footer>

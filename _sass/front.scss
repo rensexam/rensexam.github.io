@@ -431,7 +431,7 @@ nav {
     h4 {
       font-size: 23px;
       font-weight: 300;
-      margin-bottom: 7%;
+      margin-bottom: 6%;
     }
     .row {
       width: 80%;
@@ -461,6 +461,37 @@ nav {
         margin-top: 25px;
         padding: 13px 51px;
       }  
+    }
+  }
+}
+
+footer {
+  min-height: 400px;
+  .row {
+    padding-top: 163px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+      li {
+        margin: 0px 15px 0px;
+        display: inline-block;
+        a {
+          text-decoration: none;
+          img {
+            height: 33px;
+          }
+        }  
+      }
+    }
+    p {
+      text-align: center;
+      margin-top: 59px;
+      font-size: 17px;
+      letter-spacing: 1.2px;
     }
   }
 }
