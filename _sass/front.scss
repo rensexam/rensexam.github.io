@@ -293,7 +293,7 @@ nav {
 /* skill style */
 #skills {
   .skill-container {
-    min-height: 710px;
+    min-height: 620px;
     .row {
       text-align: center;
       margin: 0;
@@ -421,6 +421,46 @@ nav {
           }
         } 
       }
+    }
+  }
+}
+
+#contact {
+  .contact-container {
+    min-height: 710px;
+    h4 {
+      font-size: 23px;
+      font-weight: 300;
+      margin-bottom: 7%;
+    }
+    .row {
+      width: 80%;
+      margin: 0 auto;
+      .col-md-6 {
+        input {
+          margin-bottom: 20px;
+          font-size: 20px;
+          height: 63px;
+          background: #eeeeee;
+        }
+      }
+      .col-md-6 {
+        input {
+          &.message {
+            min-height: 270px;
+            background: #eeeeee;
+          }  
+        }
+      }
+    }
+    .row {
+      width: 80%;
+      text-align: center;
+      button {
+        font-size: 20px;
+        margin-top: 25px;
+        padding: 13px 51px;
+      }  
     }
   }
 }
