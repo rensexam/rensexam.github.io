@@ -357,8 +357,53 @@ nav {
       width: 80%;
       .col-md-4 {
         .col-md-3 {
-          img {
-          }
+          ul {
+            padding: 0;
+            margin: 0;
+            li {         
+              list-style: none;
+              float: left;
+              &.diamond {
+                height: 50px;
+                width: 50px;
+                background: transparent;
+                display: block;
+                overflow: hidden;
+                position: relative;
+                text-decoration: none;
+                border: 2px solid #fff;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+                -webkit-transition: color .35s linear;
+                -moz-transition: color .35s linear;
+                -o-transition: color .35s linear;
+                transition: color .35s linear;
+              }
+              &:hover {
+                background: transparent;
+                border: 2px solid #3a93cc; 
+              }
+            }
+            .text {
+              width: 50px;
+              height: 50px;
+              display: table-cell;
+              vertical-align: middle;
+              -webkit-transform: rotate(-45deg);
+              -moz-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+              -o-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+              text-align: center;
+              img {
+                height: 25px;
+                text-align: center;
+              }
+            }
+          }/* ul end */
         }
         
         .col-md-9 {

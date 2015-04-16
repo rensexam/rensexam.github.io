@@ -6,7 +6,13 @@
     {% for likes in site.data.likes limit:3 %}
       <div class="col-md-4">
         <div class="col-md-3">
-          <img src="/img/{{ likes.image }}"/>
+          <ul>
+            <li class="diamond">
+              <div class="text">
+                <img src="/img/{{ likes.image }}"/>
+              </div>
+            </li>
+          </ul>  
         </div>
         <div class="col-md-9">
           <h4>{{ likes.name }}</h4>
@@ -20,7 +26,13 @@
     {% for likes in site.data.likes limit:3 offset:3 %}
       <div class="col-md-4">
         <div class="col-md-3">
-          <img src="/img/{{ likes.image }}"/>
+          <ul>
+            <li class="diamond">
+              <div class="text">
+                <img src="/img/{{ likes.image }}"/>
+              </div>
+            </li>
+          </ul>  
         </div>
         <div class="col-md-9">
           <h4>{{ likes.name }}</h4>
@@ -31,4 +43,6 @@
   </div>
 
 </div>
+
+
 
