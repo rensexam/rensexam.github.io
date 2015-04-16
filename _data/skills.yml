@@ -1,0 +1,15 @@
+- name: HTML/HTML5
+  percentage: 85%
+  class: skill1 circle
+
+- name: CSS/SCSS
+  percentage: 85%
+  class: skill2 circle
+
+- name: JS/JQUERY
+  percentage: 50%
+  class: skill3 circle
+
+- name: PHOTOSHOP
+  percentage: 90%
+  class: skill4 circle

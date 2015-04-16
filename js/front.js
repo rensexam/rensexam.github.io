@@ -1,6 +1,7 @@
 var rd = rd || {};
   rd.init = function() {
     rd.initNavbar();
+    rd.skillProgress();
     /*rd.initResetScroll();*/
   }
 
@@ -21,6 +22,33 @@ rd.initNavbar = function () {
         $(document).scrollTop(0);
     }, 300);
 };*/
+
+rd.skillProgress = function() {
+  $('.skill1.circle').circleProgress({
+    value: 0.85
+  }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html(parseInt(85 * progress) + '<i>%</i>');
+  });
+
+  $('.skill2.circle').circleProgress({
+    value: 0.85
+  }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html(parseInt(85 * progress) + '<i>%</i>');
+  });
+
+  $('.skill3.circle').circleProgress({
+    value: 0.50
+  }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html(parseInt(50 * progress) + '<i>%</i>');
+  });
+
+  $('.skill4.circle').circleProgress({
+    value: 0.90
+  }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html(parseInt(90 * progress) + '<i>%</i>');
+  });
+    
+}
 
 $(function(){
     rd.init();

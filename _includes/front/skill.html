@@ -1,0 +1,17 @@
+<div class="skill-container">
+   <h1 class="header text-center">My <span class="text-blue">Skills Set</span></h1>
+   <div class="row">
+    <h3>
+      Here are some of my <span class="text-blue">Skill</span>
+    </h3>
+    <ul>
+      {% for skills in site.data.skills %}
+      <li class="{{ skills.class }}">
+          <strong>{{ skills.percentage }}</strong>
+          <span>{{ skills.name }}</span>
+      </li>
+      {% endfor %}
+    </ul>  
+   </div>
+ 
+</div>

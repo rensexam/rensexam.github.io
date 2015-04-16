@@ -290,3 +290,46 @@ nav {
   }
 }
 
+/* skill style */
+#skills {
+  .skill-container {
+    height: 710px;
+    .row {
+      text-align: center;
+      margin: 0;
+      h3{
+        font-weight: 300;
+        padding-bottom: 3%;
+      }
+      ul {
+        li {
+          &.circle {
+            width: 150px;
+            margin: 6px 25px 20px;
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            line-height: 1.2;
+            strong {
+              font-weight: 300;
+              position: absolute;
+              top: 30px;
+              left: 0;
+              width: 100%;
+              text-align: center;
+              line-height: 85px;
+              font-size: 40px;
+            }
+            span {
+              display: block;
+              color: $gray-text;
+              margin-top: 12px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
