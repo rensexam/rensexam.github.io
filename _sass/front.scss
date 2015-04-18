@@ -678,7 +678,9 @@ footer {
   #about {
     .about-container {
       h4 {
-        padding: 0px 5% 42px 5%;
+        padding: 0px 0px 42px 0px;
+        width: 90%;
+        text-align: left;
       }
       .about-content {
         width: 90%;
